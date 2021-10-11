@@ -1,3 +1,5 @@
+const appName = "PhotoRental"
+
 class equipment {
         #eqvalue;
         constructor(item, dailyPrice, eqvalue) {
@@ -20,8 +22,10 @@ class rental {
                 this.customer = customer;
                 this.initialDate = new date(initialDate);
                 this.endDate = new date(endDate);
-                this.equipment;
+                this.equipment = equipment;
         }
+        get totaldays() {
+                return `${this.endDate}` - `${this.initialDate}`
 
-}
+        }
 
