@@ -71,9 +71,9 @@ const joana = new Customer("Joana", "Rua das aves", "joana.alves@site.pt");
 
 //add rentals
 
-const r1 = new Rental(jose, "10-10-2021", 3, "10-13-2021", e1, Rental.totalcost);
-const r2 = new Rental(maria, "11-10-2021", 5, "11-15-2021", e4, Rental.totalcost);
-const r3 = new Rental(joana, "12-10-2021", 10, "10-20-2021", e6, Rental.totalcost);
+const r1 = new Rental(jose, new Date(2021, 10, 10), 3, new Date(2021, 10, 13), e1, Rental.totalcost);
+const r2 = new Rental(maria, new Date(2021, 11, 10), 5, new Date(2021, 11, 15), e4, Rental.totalcost);
+const r3 = new Rental(joana, new Date(2021, 12, 10), 10, new Date(2021, 12, 20), e6, Rental.totalcost);
 
 //collections
 
@@ -97,7 +97,7 @@ rentals.add(r1);
 rentals.add(r2);
 rentals.add(r3);
 
-//objet tree
+//object tree
 
 Object.defineProperties(PhotoRental, {
         equipments: { value: equipments, writable: false },
