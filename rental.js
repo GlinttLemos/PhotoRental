@@ -63,6 +63,18 @@ const e5 = new Equipment("Canon 70-200", Cat.L, 300, 5000);
 const e6 = new Equipment("Tripod", Cat.A, 300, 5000);
 const e7 = new Equipment("2TB SSD", Cat.S, 300, 5000);
 
+//add customers
+
+const jose = new Customer("José", "Rua das flores", "jose.santos@site.pt");
+const maria = new Customer("Maria", "Rua das pedras", "maria.ferreira@site.pt");
+const joana = new Customer("Joana", "Rua das aves", "joana.alves@site.pt");
+
+//add rentals
+
+const r1 = new Rental(jose, "10-10-2021", 3, "10-13-2021", e1);
+const r2 = new Rental(maria, "11-10-2021", 5, "11-15-2021", e4);
+const r3 = new Rental(joana, "12-10-2021", 10, "10-20-2021", e6);
+
 //collections
 
 const equipments = [] //array equipments
