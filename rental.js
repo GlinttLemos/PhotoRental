@@ -71,9 +71,9 @@ const joana = new Customer("Joana", "Rua das aves", "joana.alves@site.pt");
 
 //add rentals
 
-const r1 = new Rental(jose, "10-10-2021", 3, "10-13-2021", e1);
-const r2 = new Rental(maria, "11-10-2021", 5, "11-15-2021", e4);
-const r3 = new Rental(joana, "12-10-2021", 10, "10-20-2021", e6);
+const r1 = new Rental(jose, "10-10-2021", 3, "10-13-2021", e1, Rental.totalcost);
+const r2 = new Rental(maria, "11-10-2021", 5, "11-15-2021", e4, Rental.totalcost);
+const r3 = new Rental(joana, "12-10-2021", 10, "10-20-2021", e6, Rental.totalcost);
 
 //collections
 
@@ -88,6 +88,14 @@ equipments.push(e4);
 equipments.push(e5);
 equipments.push(e6);
 equipments.push(e7);
+
+customers.set(jose.email, jose);
+customers.set(maria.email, maria);
+customers.set(joana.email, joana);
+
+rentals.add(r1);
+rentals.add(r2);
+rentals.add(r3);
 
 //objet tree
 
