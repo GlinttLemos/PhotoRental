@@ -15,7 +15,7 @@ class Equipment {
         }
 }
 
-class Customer {
+export class Customer {
         constructor(name, address, email) {
                 this.name = name;
                 this.address = address;

@@ -23,13 +23,24 @@
                 <th>Data inicial</th>
                 <th>Dias</th>
                 <th>Data entrega</th>
-                <th>custo</th>
+                <th>Custo</th>
             </thead>
             <tbody id="gui_rentals">
                 <!-- Será preechido por JavaScript -->
             </tbody>
         </table>
     </section>
+    <section>
+        <div>
+            <h5>Novo cliente</h5>
+            <form id="guiCustomer">
+                <label><input name="name" type="text" placeholder="Primeiro nome do cliente" required /> Nome</label>
+                <label><input name="address" type="text" placeholder="Morada" maxlength="150" required /> Morada</label>
+                <label><input name="email" type="email" placeholder="Email do cliente" minlength="15" maxlength="50"
+                        required /> Email</label>
+                <button type="submit">Criar</button>
+            </form>
+        </div>
 </body>
 
 </html>

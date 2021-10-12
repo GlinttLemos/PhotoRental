@@ -1,5 +1,5 @@
 
-import { PhotoRental } from "./rental.js";
+import { PhotoRental, Customer } from "./rental.js";
 
 const rentals = document.getElementById("gui_rentals"); // Uma <table> no HTML
 
@@ -16,3 +16,23 @@ for (const rentals of PhotoRental.rentals.values()) {
                 tr.appendChild(td);
         }
 }
+
+// Form
+
+
+
+
+let form = document.getElementById("guiCustomer");
+form.addEventListener("submit", createCustomer); // Aquando de registo de "listeners" (também chamados "handlers" ou "delegates"), é preciso nomear o evento e fornecer o nome da função a invocar
+
+function createCustomer(submission) {
+        const form = submission.target;
+        submission.preventDefault();
+        const customer = new Customer(form.name.value, form.address.value, form.email.value);
+
+        PhotoRental.customers.set(customer.email, customer);
+
+
+}
+
+
