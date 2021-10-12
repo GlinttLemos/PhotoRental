@@ -1,9 +1,9 @@
 
 
-const PhotoRental = {
+export const PhotoRental = {
         name: "PhotoRental"
 
-}
+};
 
 class Equipment {
 
@@ -101,7 +101,7 @@ rentals.add(r3);
 
 Object.defineProperties(PhotoRental, {
         equipments: { value: equipments, writable: false },
-        customers: { values: customers, writable: false },
-        rentals: { values: rentals, writable: false }
+        customers: { value: customers, writable: false },
+        rentals: { value: rentals, writable: false }
 
 });

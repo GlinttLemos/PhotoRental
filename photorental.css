@@ -21,8 +21,8 @@ h6 {
 div, table {
     margin: 10px 30px;
     padding: 10px;
-    border: 1px solid lightsalmon;
-    box-shadow: 2.5px 2.5px 5px lightsalmon;
+    border: 1px solid rgb(65, 35, 197);
+    box-shadow: 2.5px 2.5px 5px rgb(4, 5, 94);
 }
 
 div.info {
@@ -34,7 +34,7 @@ div.info {
 }
 
 div.resultado {
-    background-color: tomato;
+    background-color: rgb(35, 89, 190);
     transition: background-color 1s;
 }
 

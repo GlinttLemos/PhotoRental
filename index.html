@@ -7,14 +7,29 @@
     <title>Photo Rental</title>
     <link rel="stylesheet" href="./photorental.css" />
     <link rel="icon" type="image/png" href="./camera.jfif" />
-    <script src="./rental.js"></script>
+    <script type="module" src="./rental.js"></script>
+    <script type="module" src="./gui.js"></script>
 </head>
 
 <body>
     <img src="./camera.jfif" />
     <h6>Uma app para gerir aluguer de equipamento fotografico.</h6>
     <p>Rent away!</p>
+    <section>
 
+        <table>
+            <thead>
+                <th>Equipamento</th>
+                <th>Data inicial</th>
+                <th>Dias</th>
+                <th>Data entrega</th>
+                <th>custo</th>
+            </thead>
+            <tbody id="gui_rentals">
+                <!-- Será preechido por JavaScript -->
+            </tbody>
+        </table>
+    </section>
 </body>
 
 </html>
