@@ -2,20 +2,24 @@ body {
     background-color: rgb(255, 255, 255);
     font-size: 12pt;
     font-family: 'Lucida Sans', Verdana, sans-serif;
+    
 }
 
 p, li {
     margin: 10px 0 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h5 {
     margin: 10px 0;
     font-size: 13pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h6 {
     margin: 20px 0;
     font-size: 14pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 div, table {
@@ -31,6 +35,7 @@ div.info {
     top: 0;
     font-size: 8pt;
     transition: background-color 5s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 div.resultado {
@@ -40,24 +45,32 @@ div.resultado {
 
 tr {
     font-size: 10pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 th {
     font-weight: bold;
     padding-bottom: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 td {
     white-space: pre;
     padding: 0px 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 label {
     display: block;
     font-size: 10pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 input, select {
     width: 250px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

@@ -11,8 +11,8 @@ for (const rentals of PhotoRental.rentals.values()) {
         gui_rentals.appendChild(tr);
         for (const field of Object.values(rentals)) {
                 td = document.createElement("td");
-                td.textContent = field instanceof Date ? `${field.toLocaleString()}` : `${field}`;
-                td.textContent = field instanceof Object ? `${field.toLocaleString()}` : `${field}`;
+                td.textContent = field instanceof Date ? `${field.toLocaleString()}` :
+                        td.textContent = field instanceof Object ? `${field.name}` : `${field}`;
                 tr.appendChild(td);
         }
 }
@@ -32,7 +32,7 @@ function createCustomer(submission) {
 
         PhotoRental.customers.set(customer.email, customer);
 
-
+        alert("Cliente " + form.name.value + " adicionado com sucesso");
 }
 
 
