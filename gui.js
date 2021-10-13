@@ -36,3 +36,30 @@ function createCustomer(submission) {
 }
 
 
+form = document.getElementById("guirentals");
+form.addEventListener("submit", createrental);
+
+function createrental(submission) {
+        const form = submission.target;
+        submission.preventDefault();
+        PhotoRental.preprental(form.email.value, new Date(form.initialdate.value), form.days.value, new Date(form.endDate.value), form.equipment.value)
+};
+
+PhotoRental.registerEvent("Novo aluguer", refreshRentals);
+
+
+function refreshRentals() {
+        const rentals = document.getElementById("gui_rentals");
+        while (rentals.firstChild)
+                rentals.removeChild(rentals.firstChild);
+        let tr;
+        let td;
+        for (const field of Object.values(rentals)) {
+                td = document.createElement("td");
+                td.textContent = field instanceof Date ? `${field.toLocaleString()}` :
+                        td.textContent = field instanceof Object ? `${field.name}` : `${field}`;
+                tr.appendChild(td);
+        }
+}
+
+

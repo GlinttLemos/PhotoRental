@@ -105,3 +105,19 @@ Object.defineProperties(PhotoRental, {
         rentals: { value: rentals, writable: false }
 
 });
+
+PhotoRental.preprental = function (email, initialdate, days, enddate, equipment) {
+        const strequipment = equipments.find(equipmnets => equipmnets.name === equipment);
+        const customer = customers.get(email);
+
+        rentals.add(new Rental(customer, new Date(initialdate), days, new Date(enddate), strequipment));
+
+
+}
+
+const addEventListener = new Map();
+addEventListener.set("Novo aluguer", []);
+
+PhotoRental.registerEvent = function (event, listener) {
+        addEventListener.get(event).push(listener);
+}
