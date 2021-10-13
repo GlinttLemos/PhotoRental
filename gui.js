@@ -23,7 +23,7 @@ for (const rentals of PhotoRental.rentals.values()) {
 
 
 let form = document.getElementById("guiCustomer");
-form.addEventListener("submit", createCustomer); // Aquando de registo de "listeners" (também chamados "handlers" ou "delegates"), é preciso nomear o evento e fornecer o nome da função a invocar
+form.addEventListener("submit", createCustomer);
 
 function createCustomer(submission) {
         const form = submission.target;
