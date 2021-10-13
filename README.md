@@ -1,1 +1,2 @@
 # PhotoRental
+javascript exercise
